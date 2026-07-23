@@ -8,7 +8,6 @@ class Solution {
         boolean[] col = new boolean[n];
         boolean[] diag1 = new boolean[2 * n];
         boolean[] diag2 = new boolean[2 * n];
-
         solve(0, board, ans, col, diag1, diag2);
         return ans;
     }
