@@ -1,1 +1,1 @@
-<h2>scramble-string Notes</h2><hr>[ Time taken: 4m 8s ]
+<h2>scramble-string Notes</h2><hr>[ Time taken: 8m 8s ]
