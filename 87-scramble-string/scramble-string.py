@@ -9,21 +9,16 @@ class Solution:
             if a == b:
                 return True
 
-            if len(a) != len(b):
-                return False
-
             if sorted(a) != sorted(b):
                 return False
 
             n = len(a)
 
             for i in range(1, n):
-                # No swap
                 if solve(a[:i], b[:i]) and solve(a[i:], b[i:]):
                     memo[(a, b)] = True
                     return True
 
-                # Swap
                 if solve(a[:i], b[n-i:]) and solve(a[i:], b[:n-i]):
                     memo[(a, b)] = True
                     return True
